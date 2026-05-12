@@ -1,0 +1,10 @@
+*test.lua
+!*.ENC.lua
+*oldfishit.lua
+*panelmount-fyy/
+*s.lua
+*ui.lua
+*it.lua
+*on.lua
+*ent.lua
+!Windui.lua
