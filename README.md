@@ -1,202 +1,158 @@
-# FyyCommunity Scripts
+<div align="center">
 
-> Fyy Community Roblox Luau script collection with polished per-script documentation, privacy-safe release notes, and dedicated docs for Fish IT, Abyss, Garden Horizon, HTTP tooling, and WindUI.
+# 🎣 FyyLuaCollection 🎣
 
-<p align="left">
-  <img alt="language" src="https://img.shields.io/badge/language-Luau-00A2FF?logo=lua&logoColor=white">
-  <img alt="platform" src="https://img.shields.io/badge/platform-Roblox-000000?logo=roblox&logoColor=white">
-  <img alt="ui" src="https://img.shields.io/badge/ui-WindUI%20%2B%20Fluent-6D4CFF">
-  <img alt="docs" src="https://img.shields.io/badge/docs-Per%20Script-0E9F6E">
-  <img alt="status" src="https://img.shields.io/badge/status-Private%20Toolkit-1177AA">
-  <img alt="owner" src="https://img.shields.io/badge/by-FyyWannaFly-5865F2">
+### **Curated Roblox Luau Script Hub by Fyy Community**
+
+*Per-script documentation · Encrypted release builds · WindUI & Fluent interfaces*
+
+<br />
+
+<p>
+  <img src="https://img.shields.io/badge/Language-Luau-00A2FF?style=for-the-badge&logo=lua&logoColor=white" alt="Luau" />
+  <img src="https://img.shields.io/badge/Platform-Roblox-000000?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox" />
+  <img src="https://img.shields.io/badge/UI-WindUI_%2B_Fluent-6D4CFF?style=for-the-badge" alt="UI" />
 </p>
 
-This repository is a curated script hub workspace for Fyy Community. Active Luau scripts live in `scripts/`, the vendored UI library under `lib/` lives in `lib/`, and `docs/` contains one dedicated `README.md` per in-scope file so every script has its own clean feature page.
+<p>
+  <img src="https://img.shields.io/badge/Docs-Per_Script-0E9F6E?style=flat-square" alt="Docs" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/By-FyyWannaFly-5865F2?style=flat-square" alt="Owner" />
+  <img src="https://img.shields.io/badge/License-ISC-green?style=flat-square" alt="License" />
+</p>
 
-Sensitive runtime values are intentionally not documented here. Private domains, raw source URLs, webhooks, tokens, database credentials, and backend details should stay out of public README content.
+<br />
+
+**[Fyy Community Discord](https://discord.gg/77nEeYeFRp)** · **[Report Issue](../../issues)** · **[Request Feature](../../issues)**
+
+</div>
 
 ---
 
-## Repo Name Suggestions
+## Overview
 
-Recommended repo name: **`FyyCommunity-Scripts`**
+`FyyLuaCollection` is a curated script hub for the **Fyy Community** — a collection of encrypted, production-ready Roblox Luau scripts with dedicated documentation per tool. Every script ships with its own feature page under `docs/`, so users know exactly what they are running before they load it.
 
-Other good options:
+Built for anglers, climbers, and gardeners across Roblox's biggest fishing and survival games.
 
-| Name | Why it fits |
-|---|---|
-| `FyyScriptHub` | Short, clean, and easy to remember. |
-| `FyyRobloxTools` | Good if this grows beyond game-specific scripts. |
-| `FyyX-Scripts` | Matches the `Fyy X` branding inside the UI windows. |
-| `FyyCommunity-Luau` | More technical and language-focused. |
+---
+
+## Script Catalog
+
+| Script | Target Game | UI | Docs |
+| :--- | :--- | :--- | :--- |
+| **Fyy Fish IT — Fluent** | Fish IT | Fluent | [docs/FyyFishITFluent](docs/FyyFishITFluent/README.md) |
+| **Fyy Fish IT — WindUI** | Fish IT | WindUI | [docs/FyyFishITWindUI](docs/FyyFishITWindUI/README.md) |
+| **Client Fish IT** | Fish IT | WindUI | [docs/ClientFishIT](docs/ClientFishIT/README.md) |
+| **Fyy Abyss** | Abyss | WindUI | [docs/FyyAbyss](docs/FyyAbyss/README.md) |
+| **Client Abyss** | Abyss | WindUI | [docs/ClientAbyss](docs/ClientAbyss/README.md) |
+| **Fyy Garden Horizon** | Garden Horizon | WindUI | [docs/FyyGardenHorizon](docs/FyyGardenHorizon/README.md) |
+| **Hook HTTPS** | Utility | — | [docs/Hook_Https](docs/Hook_Https/README.md) |
+| **WindUI Library** | All scripts | — | [docs/WindUI](docs/WindUI/README.md) |
 
 ---
 
 ## Repository Layout
 
-```text
-.
-├─ scripts/
-│  ├─ FyyAbyss.lua
-│  ├─ FyyFishITFluent.lua
-│  ├─ FyyFishITWindUI.lua
-│  ├─ FyyGardenHorizon.lua
-│  ├─ ClientAbyss.lua
-│  ├─ ClientFishIT.lua
-│  └─ Hook_Https.lua
-├─ lib/
-│  └─ WindUI.lua
-├─ docs/
-│  ├─ FyyAbyss/README.md
-│  ├─ FyyFishITFluent/README.md
-│  ├─ FyyFishITWindUI/README.md
-│  ├─ FyyGardenHorizon/README.md
-│  ├─ ClientAbyss/README.md
-│  ├─ ClientFishIT/README.md
-│  ├─ Hook_Https/README.md
-│  └─ WindUI/README.md
-└─ README.md
+```
+FyyLuaCollection/
+│
+├── scripts/                    # Production-ready encrypted scripts (.ENC.lua)
+│   ├── FyyFishITFluentENC.lua
+│   ├── FyyFishITWindUIENC.lua
+│   ├── ClientFishITENC.lua
+│   ├── FyyAbyssENC.lua
+│   ├── ClientAbyssENC.lua
+│   ├── FyyGardenHorizonENC.lua
+│   └── Hook_HttpsENC.lua
+│
+├── lib/                        # Vendored UI libraries
+│   └── WindUI.lua
+│
+├── docs/                       # Per-script feature documentation
+│   ├── FyyFishITFluent/
+│   ├── FyyFishITWindUI/
+│   ├── ClientFishIT/
+│   ├── FyyAbyss/
+│   ├── ClientAbyss/
+│   ├── FyyGardenHorizon/
+│   ├── Hook_Https/
+│   └── WindUI/
+│
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## Script Index
+## Usage
 
-| Script | Target / Role | UI | Dedicated Docs |
-|---|---|---|---|
-| `scripts/FyyFishITWindUI.lua` | Main Fish IT release | WindUI | [`docs/FyyFishITWindUI`](docs/FyyFishITWindUI/README.md) |
-| `scripts/FyyFishITFluent.lua` | Alternate Fish IT release | Fluent | [`docs/FyyFishITFluent`](docs/FyyFishITFluent/README.md) |
-| `scripts/FyyAbyss.lua` | Abyss IT release | WindUI | [`docs/FyyAbyss`](docs/FyyAbyss/README.md) |
-| `scripts/FyyGardenHorizon.lua` | Garden Horizon release | WindUI | [`docs/FyyGardenHorizon`](docs/FyyGardenHorizon/README.md) |
-| `scripts/ClientFishIT.lua` | Alternate Fish IT client | Lexs-style UI | [`docs/ClientFishIT`](docs/ClientFishIT/README.md) |
-| `scripts/ClientAbyss.lua` | Alternate Abyss client | Lexs-style UI | [`docs/ClientAbyss`](docs/ClientAbyss/README.md) |
-| `scripts/Hook_Https.lua` | HTTP debugging utility | Custom GUI | [`docs/Hook_Https`](docs/Hook_Https/README.md) |
-| `lib/WindUI.lua` | Vendored UI library | Library | [`docs/WindUI`](docs/WindUI/README.md) |
-
----
-
-## Feature Highlights
-
-### Fish IT Scripts
-
-- multiple UI variants for the same Fish IT ecosystem
-- player helpers such as WalkSpeed, Infinite Jump, NoClip, and movement utilities
-- fishing automation workflows
-- shop, teleport, event, quest, totem, enchant, and settings panels
-- config persistence and local save/load behavior
-- webhook-style notification configuration without exposing private endpoints in docs
-
-### Abyss Scripts
-
-- Abyss-focused client and Fyy-branded implementations
-- selected-fish / automation-oriented controls
-- local config folder setup
-- lighter footprint than the full Fish IT hubs
-
-### Garden Horizon Script
-
-- Garden/farming workflow support
-- Fyy WindUI styling
-- local config persistence
-- player quality-of-life helpers
-
-### Developer Utility
-
-- HTTP monitor for request/response inspection
-- compact debugging GUI
-- optional local file output for captured logs
-
-### UI Library
-
-- vendored WindUI build
-- windows, tabs, themes, controls, notifications, and styling primitives
-- used by the WindUI-based Fyy scripts
-
----
-
-## In Scope vs Out of Scope
-
-In scope:
-
-- active release scripts under `scripts/`
-- client variants
-- debugging utility
-- vendored UI library
-- `docs/` documentation pages
-
-Out of scope for public docs:
-
-- `test.lua`
-- `oldfishit.lua`
-- backend folders
-- generated logs/config files
-- `.env` files
-- private endpoints and credentials
-
----
-
-## Runtime Requirements
-
-These scripts are designed for Roblox Luau environments that expose common APIs such as:
-
-- `loadstring`
-- `game:HttpGet`
-- `writefile`
-- `readfile`
-- `isfile`
-- `isfolder`
-- `makefolder`
-- `delfile`
-- `listfiles`
-- `setclipboard`
-
-Common Roblox services used across the scripts include:
-
-- `Players`
-- `RunService`
-- `HttpService`
-- `UserInputService`
-- `ReplicatedStorage`
-- `TeleportService`
-- `Lighting`
-- `Workspace`
-
----
-
-## Privacy Rules
-
-Do not publish private runtime values in README files.
-
-Avoid exposing:
-
-- backend domains
-- raw script-hosting URLs
-- webhook URLs
-- bot tokens
-- database connection strings
-- owner/admin IDs
-- `.env` values
-- private key/license service details
-
-Use placeholders instead:
+Each script has its own loadstring documented in its respective `docs/*/README.md`. Example pattern:
 
 ```lua
-loadstring(game:HttpGet("<your-release-url>"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FyyWannaFly/FyyLuaCollection/main/scripts/FyyFishITFluentENC.lua"))()
 ```
 
-```text
-<private-backend-endpoint>
-<private-webhook-url>
-<private-discord-bot-token>
-```
+Refer to the per-script documentation for:
+
+- Full feature list
+- UI screenshots
+- Configuration options
+- Known limitations
+- Compatibility notes
 
 ---
 
-## Maintenance Notes
+## Security & Privacy
 
-- Keep one dedicated docs folder per active script.
-- Keep the root README as an index, not a giant feature dump.
-- Document new scripts under `docs/<ScriptName>/README.md`.
-- Keep legacy/test/backend files ignored unless they are sanitized.
-- Review all docs for private URLs before committing or pushing.
+> [!NOTE]
+> This repository intentionally **excludes** sensitive runtime values:
+> - Private domain names and API backends
+> - Webhooks, tokens, and database credentials
+> - Raw unencrypted source code
+>
+> All scripts in `scripts/` are **`.ENC.lua`** — encrypted release builds. The raw sources remain private.
 
+---
+
+## What Ships Here
+
+- **`scripts/*.ENC.lua`** — Production encrypted builds ready to loadstring
+- **`lib/WindUI.lua`** — Vendored UI library used across multiple scripts
+- **`docs/*/README.md`** — One feature page per script, updated per release
+
+## What Does Not Ship
+
+- Raw unencrypted Luau sources
+- Backend API URLs, domains, webhooks
+- Authentication keys or tokens
+- Development/testing-only scripts
+
+---
+
+## Community
+
+| Resource | Link |
+| :--- | :--- |
+| Discord Server | [discord.gg/77nEeYeFRp](https://discord.gg/77nEeYeFRp) |
+| Issue Tracker | [GitHub Issues](../../issues) |
+| Creator | [@FyyWannaFly](https://github.com/FyyWannaFly) |
+
+---
+
+## License
+
+Distributed under the **ISC License**. See [LICENSE](LICENSE) for details.
+
+Scripts in this repository are provided as-is for community use. The authors are not responsible for any consequences resulting from their use.
+
+---
+
+<div align="center">
+
+**Fyy Community** — *Lets Fly High!*
+
+Made with 💜 for the Roblox scripting community
+
+</div>
