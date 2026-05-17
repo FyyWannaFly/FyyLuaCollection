@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎣 FyyLuaCollection 🎣
+#  FyyLuaCollection 
 
 ### **Curated Roblox Luau Script Hub by Fyy Community**
 
